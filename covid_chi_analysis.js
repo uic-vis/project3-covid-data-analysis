@@ -1,6 +1,4 @@
 function createMap() {
-    console.log("map hello ramiya");
-
     const map = L.map('map').setView([41.85, -87.68], 10); // Chicago origins
 
     var tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -17,8 +15,6 @@ function createMap() {
 
 
     function clickFeature(e) {
-        console.log("hello click ramiya");
-        // console.log('click registered', e.target.feature.properties.ZIPCODE);
 
         d3.select("#plot").html("");
         d3.select("#titlebar").html("");
@@ -131,7 +127,6 @@ function createMap() {
 }
 
 function init() {
-    console.log("hey hello");
     createMap();
 }
 
