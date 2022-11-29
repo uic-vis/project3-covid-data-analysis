@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="stylesheet" href="./index_files/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="">
+    <script src="./index_files/leaflet.js.download" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+    <script src="./index_files/d3.v7.min.js.download"></script>
+    <script src="./index_files/colorbrewer.v1.min.js.download"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="chi_data.js"></script>
+    <script src="voi.js"></script>    
+
+    <style>
+          #map{
+             position: absolute;
+             width : 50%;
+             height : 100%;
+             top: 15%
+        }
+        #plot{
+             position: absolute;
+             left : 50%;
+             width : 20%;
+             height : 100%;
+             top: 15%
+
+        }
+        #titlebar{
+            position: absolute;
+            left: 68%;
+            width: 10%;
+            height: 100%;
+            top: 113%;
+            font-size: 25px;
+        }
+        #header{
+            position: absolute;
+            width : 70%;
+             height : 100%;
+             left : 50%
+        }
+        #beforelabel{
+            position: absolute;
+            left: 60%;
+            width: 10%;
+            height: 100%;
+            top: 106%;
+        }
+        #afterlabel{
+            position: absolute;
+            left: 75%;
+            width: 10%;
+            height: 100%;
+            top: 106%;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="header"><h1>Spatial View</h1></div>
+    <div id="map"></div>
+    <div id="plot"></div>
+    <div id="beforelabel"></div>
+    <div id="afterlabel"></div>
+    <div id= "titlebar"></div>
+    <svg id = "legend" width="1250" height="500" visibility="hidden">
+          <rect x="1100" y="100" width ="10" height="10" style="fill: #98abc5" />
+          <text x="1115" y="110" class="small">Cases</text>
+          <rect x="1100" y="115" width ="10" height="10" style="fill: #8a89a6" />
+          <text x="1115" y="125" class="small">Tests</text>
+          <rect x="1100" y="130" width ="10" height="10" style="fill: #7b6888" />
+          <text x="1115" y="140" class="small">Deaths</text>
+      </svg>
+
+</body></html>
