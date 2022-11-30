@@ -9,22 +9,20 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
     <script src="https://d3js.org/d3.v4.js"></script>
     <script src="chi_data.js"></script>
-    <script src="covid_chi_analysis.js"></script>    
-    <script type="module" src="task4.js"></script>
+    <script src="int3.js"></script>    
 
     <style>
-          #map{
+        #barchart{
              position: absolute;
              width : 50%;
              height : 100%;
              top: 15%
         }
-        #plot{
+        #linechart{
              position: absolute;
-             left : 50%;
-             width : 20%;
+             width : 50%;
              height : 100%;
-             top: 15%
+             top: 65%
 
         }
         #titlebar{
@@ -41,40 +39,17 @@
              height : 100%;
              left : 50%
         }
-        #beforelabel{
-            position: absolute;
-            left: 60%;
-            width: 10%;
-            height: 100%;
-            top: 106%;
+
+        #lines path {
+             fill: none;
+             stroke-width: 1px;
         }
-        #afterlabel{
-            position: absolute;
-            left: 75%;
-            width: 10%;
-            height: 100%;
-            top: 106%;
-        }
+        
     </style>
 
 </head>
 <body>
-    <!-- <div id="header"><h1>Spatial View</h1></div> -->
-    <a href="int3.html">
-        <button>Multi Linked Bar Chart</button>
-    </a>
-    <div id="map"></div>
-    <div id="plot"></div>
-    <div id="beforelabel"></div>
-    <div id="afterlabel"></div>
-    <div id= "titlebar"></div>
-    <svg id = "legend" width="1250" height="500" visibility="hidden">
-          <rect x="1100" y="100" width ="10" height="10" style="fill: #98abc5" />
-          <text x="1115" y="110" class="small">Cases</text>
-          <rect x="1100" y="115" width ="10" height="10" style="fill: #8a89a6" />
-          <text x="1115" y="125" class="small">Tests</text>
-          <rect x="1100" y="130" width ="10" height="10" style="fill: #7b6888" />
-          <text x="1115" y="140" class="small">Deaths</text>
-      </svg>
-
+    <div id="header"><h1>TASK 3</h1></div>
+    <div id="barchart"></div>
+    <div id="linechart"></div>
 </body></html>
