@@ -8,7 +8,6 @@ function createMap() {
     line(selectedradio);
     });
 
-
     function line(selectedradio){
     console.log("hello selectedradio" + selectedradio);
     // set the dimensions and margins of the graph
@@ -62,7 +61,7 @@ function createMap() {
 
     d3.select("#linechart").html("");
 
-        var svg = d3.select("#linechart").append("svg")
+    var svg = d3.select("#linechart").append("svg")
             .attr("width", width + margin.left + margin.right)
             .attr("height", height + margin.top + margin.bottom)      
         
@@ -100,7 +99,7 @@ function createMap() {
           .append("path")
           .attr("d", d => line(d.values))
           .style("mix-blend-mode", "multiply");
-});
+        });
            });
         }
 

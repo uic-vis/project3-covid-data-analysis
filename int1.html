@@ -8,21 +8,22 @@
     <script src="./index_files/colorbrewer.v1.min.js.download"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
     <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="chi_data.js"></script>
+    <script src="int1.js"></script>    
 
     <style>
-          #map{
+        #barchart{
+             position: absolute;
+             width : 50%;
+             height : 100%;
+             top: 15%;
+             left : 15%
+        }
+        #linechart{
              position: absolute;
              width : 50%;
              height : 100%;
              top: 15%
-        }
-        #plot{
-             position: absolute;
-             left : 50%;
-             width : 20%;
-             height : 100%;
-             top: 15%
-
         }
         #titlebar{
             position: absolute;
@@ -35,41 +36,14 @@
         #header{
             position: absolute;
             width : 70%;
-             height : 100%;
-             left : 50%
-        }
-        #beforelabel{
-            position: absolute;
-            left: 60%;
-            width: 10%;
-            height: 100%;
-            top: 106%;
-        }
-        #afterlabel{
-            position: absolute;
-            left: 75%;
-            width: 10%;
-            height: 100%;
-            top: 106%;
+            height : 100%;
+            left : 50%
         }
     </style>
 
 </head>
 <body>
-    <!-- <div id="header"><h1>Spatial View</h1></div> -->
-    <a href="int3.html">
-        <button>Multi Linked Bar Chart</button>
-    </a>
-    <a href="int2.html">
-        <button>Multi Linked Interactivity 2</button>
-    </a>
-    <a href="int1.html">
-        <button>Multi Linked Interactivity 1</button>
-    </a>
-    <a href="vis1.html">
-        <button>saptial 1</button>
-    </a>
-   
-   
-
+    <div id="header"><h1>Interaction 1</h1></div>
+    <div id = "barchart"></div>
+    <div id="linechart"></div>
 </body></html>
