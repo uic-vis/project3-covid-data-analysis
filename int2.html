@@ -12,11 +12,12 @@
     <script src="int2.js"></script>    
 
     <style>
-        #barchart{
+        #radio{
              position: absolute;
              width : 50%;
              height : 100%;
-             top: 15%
+             left : 40%;
+             top: 25%
         }
         #linechart{
              position: absolute;
@@ -37,7 +38,7 @@
             position: absolute;
             width : 70%;
              height : 100%;
-             left : 50%
+             left : 40%
         }
 
         #lines path {
@@ -46,12 +47,22 @@
         }
         
     </style>
+<script src="//code.jquery.com/jquery.min.js"></script>
 
+<script>
+    $(function(){
+      $("#nav").load("nav.html");
+    });
+    </script>
 </head>
 <body>
-    <div id="header"><h1>TASK 2</h1></div>
+    <div class="topnav" id="nav"></div>
+
+    <!-- <div id="header"><h3>Single View Selection Visualization</h3></div> -->
+    <div id="radiobutton">
         <input type="radio" name="years" value="2021"> <label> 2021 </label>
         <input type="radio" name="years" value="2022"> <label> 2022 </label>
-
+    </div>
     <div id="linechart"></div>
+    <div id = "obs"><p></p></div>
 </body></html>

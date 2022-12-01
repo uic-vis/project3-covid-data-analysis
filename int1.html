@@ -14,7 +14,7 @@
     <style>
         #barchart{
              position: absolute;
-             width : 50%;
+             width : 30%;
              height : 100%;
              top: 15%;
         }
@@ -23,7 +23,7 @@
              width : 50%;
              height : 100%;
              top: 15%;
-             left : 80%;
+             left : 60%;
         }
         #titlebar{
             position: absolute;
@@ -41,8 +41,18 @@
         }
     </style>
 
+<script src="//code.jquery.com/jquery.min.js"></script>
+
+<script>
+    $(function(){
+      $("#nav").load("nav.html");
+    });
+    </script>
+
 </head>
 <body>
+    <div class="topnav" id="nav"></div>
+
     <div id="header"><h1>Interaction 1</h1></div>
     <div id ="barchart"></div>
     <div id="linechart"></div>

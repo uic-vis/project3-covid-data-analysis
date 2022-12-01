@@ -1,77 +1,73 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-    <link rel="stylesheet" href="./index_files/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
-    <script src="./index_files/leaflet.js.download" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
-    <script src="./index_files/d3.v7.min.js.download"></script>
-    <script src="./index_files/colorbrewer.v1.min.js.download"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
-    <script src="https://d3js.org/d3.v4.js"></script>
-    <script src="chi_data.js"></script>
-    <script src="covid_chi_analysis.js"></script>    
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
 
-    <style>
-          #map{
-             position: absolute;
-             width : 50%;
-             height : 100%;
-             top: 15%
-        }
-        #plot{
-             position: absolute;
-             left : 50%;
-             width : 20%;
-             height : 100%;
-             top: 15%
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
 
-        }
-        #titlebar{
-            position: absolute;
-            left: 68%;
-            width: 10%;
-            height: 100%;
-            top: 113%;
-            font-size: 25px;
-        }
-        #header{
-            position: absolute;
-            width : 70%;
-             height : 100%;
-             left : 50%
-        }
-        #beforelabel{
-            position: absolute;
-            left: 60%;
-            width: 10%;
-            height: 100%;
-            top: 106%;
-        }
-        #afterlabel{
-            position: absolute;
-            left: 75%;
-            width: 10%;
-            height: 100%;
-            top: 106%;
-        }
-    </style>
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
 
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+</style>
+<script src="//code.jquery.com/jquery.min.js"></script>
+
+<script>
+    $(function(){
+      $("#nav").load("nav.html");
+    });
+</script>
 </head>
 <body>
-    <!-- <div id="header"><h1>Spatial View</h1></div> -->
-    <a href="int3.html">
-        <button>Multi Linked Bar Chart</button>
-    </a>
-    <a href="int2.html">
-        <button>Multi Linked Interactivity 2</button>
-    </a>
-    <a href="int1.html">
-        <button>Multi Linked Interactivity 1</button>
-    </a>
-    <a href="vis1.html">
-        <button>saptial 1</button>
-    </a>
-   
-   
 
-</body></html>
+<div class="topnav" id="nav"></div>
+
+<div style="padding-left:16px">
+  <h1 style="text-align:center">Introduction</h1>
+  <b><h3 style="text-align:center">COVID-19 - Cases, Tests, Deaths analysis</h3>
+  <h3 style="text-align:center">Authors: Ramiya Shree Seshaiah & Kushal Palvai reddy</h3></b>
+
+  <h2 >DataSet</h2>
+
+  <h4>
+    
+    <ul>
+        <li>Time Period  : 2020 - Current</li>
+        <li>Frequency of Update - Monthly</li>
+        <li>Data Owner - Department of Public Health</li>
+        <li>Number of Record - 8040 records each representing a week of COVID-19 metrics for a Zip Code</li>
+        <li>Number of Fields - 21 each representing different attributes</li>
+        <li>    <a href="https://data.cityofchicago.org/Health-Human-Services/COVID-19-Cases-Tests-and-Deaths-by-ZIP-Code/yhhz-zm2vhttps://data.cityofchicago.org/Health-Human-Services/COVID-19-Cases-Tests-and-Deaths-by-ZIP-Code/yhhz-zm2v">Dataset</a>    
+        </li>
+      </ul>  
+    
+    </p>
+</div>
+
+</body>
+
+</html>
+
+

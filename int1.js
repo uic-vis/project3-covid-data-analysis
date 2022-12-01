@@ -187,14 +187,16 @@ function barChart() {
     function update(manyData) {
       
       // get the number of cars for each origin
-      const originCounts = d3.rollup(
-        manyData,
-        group => group.length,
-        d => d.year
-      );
+    //   const originCounts = d3.rollup(
+    //     manyData,
+    //     group => group.length,
+    //     d => d.year
+    //   );
   
       // update x scale
-      x.domain([0, d3.max(originCounts.values())]).nice()
+      d3.json("originCounts.json", function(originCounts) {
+
+      x.domain([0, 40]).nice()
   
       // update x axis
   
@@ -218,6 +220,7 @@ function barChart() {
         .transition(t)
           .attr("width", ([year, count]) => x(count))
     }
+      )};
 
     return Object.assign(svg.node(), { update })
     

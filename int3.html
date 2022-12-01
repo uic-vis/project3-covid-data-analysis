@@ -44,12 +44,17 @@
              fill: none;
              stroke-width: 1px;
         }
-        
     </style>
+    <script src="//code.jquery.com/jquery.min.js"></script>
 
+<script>
+    $(function(){
+      $("#nav").load("nav.html");
+    });
+    </script>
 </head>
 <body>
-    <div id="header"><h1>TASK 3</h1></div>
+    <div class="topnav" id="nav"></div>
     <div id="barchart"></div>
     <div id="linechart"></div>
 </body></html>

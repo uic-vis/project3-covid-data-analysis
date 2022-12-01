@@ -55,19 +55,19 @@
             top: 106%;
         }
     </style>
+<script src="//code.jquery.com/jquery.min.js"></script>
 
+<script>
+    $(function(){
+      $("#nav").load("nav.html");
+    });
+    </script>
 </head>
 <body>
-    <!-- <div id="header"><h1>Spatial View</h1></div> -->
-    <a href="int3.html">
-        <button>Multi Linked Bar Chart</button>
-    </a>
-    <a href="int2.html">
-        <button>Multi Linked Interactivity 2</button>
-    </a>
-    <a href="int1.html">
-        <button>Multi Linked Interactivity 1</button>
-    </a>
+    <div class="topnav" id="nav"></div>
+
+    <div id="header"><h1>Spatial View</h1></div>
+   
     <div id="map"></div>
     <div id="plot"></div>
     <div id="beforelabel"></div>
