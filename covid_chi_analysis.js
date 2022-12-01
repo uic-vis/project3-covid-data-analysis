@@ -1,6 +1,6 @@
 function createMap() {
     console.log("hello hey there in map");
-    const map = L.map('map').setView([41.85, -87.68], 10); // Chicago origins
+    var map = L.map('map', { drawControl: true }).setView([41.881832, -87.623177], 11);
 
     var tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
