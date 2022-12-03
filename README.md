@@ -6,6 +6,9 @@
 
 ## Webpage -  [Link](https://uic-vis.github.io/project3-covid-data-analysis/) 
 
+![alt text](DatasetWebsite.png)
+
+
 The Dataset that we have used over here is related to COVID-19 cases, tests and deaths. The time period in the data set is from march 2020 to september 2022. Data owner is the Department of Public Health in chicago. We have the city of chicago with zip codes. There are 8040 records with each row representing a week. There are also 21 fields representing different attributes. The attributes present here are Row ID, Zipcode, Week, Week start, Week end, Cases/Tests/Death weekly & cumulative, population and percentage positive tests weekly & cumulative. 
 
 For Data Preprocessing, Using Pandas, we first formatted both the data and time data. Week number is used to find if there is any missing field. Percentage tested positive is used to find if there are any missing number of cases. All null values are removed from the data. It's a numerical dataset and there are multiple categories for an attribute. We are currently focused on COVID data before and after vaccination, we aggregate data by weekly and monthly. Our main goal is to analyze what impact did vaccination have on COVID - 19. 
